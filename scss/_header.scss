@@ -1,0 +1,60 @@
+.header{
+    &__btn-open,
+    &__btn-close{
+        display: none;
+        border: none;
+        background: inherit;
+    }
+    margin-bottom: rem(60px);
+    &__wrapp{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: rem(40px) rem(80px);
+    }
+    &__nav-list{
+        display: flex;
+        gap: rem(30px);
+    }
+    &__nav-link{
+        @extend %serif-fw400;
+        font-size: rem(14px);
+        line-height: rem(18.55px);
+        color: rgba(23, 23, 23, 1);
+        transition: 0.7s;
+        &:hover{
+            transition: 0.7s;
+            color: #C9A96E;
+        }
+    }
+    &__content{
+        position: relative;
+    }
+    &__content-inner{
+        position: absolute;
+        bottom: rem(59px);
+        color: #FFF;
+        max-width: rem(560px);
+    }
+    &__head{
+        padding-top: rem(4px);
+        margin-bottom: rem(10px);
+        @extend %serif-fw700;
+        font-size: rem(40px);
+        line-height: rem(50px);
+    }
+    &__span-t{
+        @extend %sans-fw400;
+        font-size: rem(14px);
+        line-height: rem(18.12px);
+    }
+    &__span{
+        margin-right: rem(15px);
+        @extend %serif-fw400;
+        font-size: rem(14px);
+        line-height: rem(18.55px);
+    }
+    &__span-q{
+        color: rgba(180, 180, 180, 1);
+    }
+}

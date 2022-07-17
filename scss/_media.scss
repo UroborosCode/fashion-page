@@ -1,0 +1,85 @@
+@media screen and (max-width: 780px){
+    html {
+        font-size: ($root-font-size / 18px) * 100%;
+      }
+      .main{
+        &__right--grid{
+            grid-template-columns: 1fr !important;
+        }
+        
+      }
+      .news-w{
+        max-width: rem(370px) !important;
+      }
+}
+@media screen and (max-width: 700px){
+  .main{
+    &__wrapp{
+      display: block !important;
+    }
+  }
+  .header__content-inner {
+    bottom: 0 !important;
+  }
+  .continue>div>div>div>img,
+  .post-r>div>img {
+    width: 100%;
+  }
+  .social__item {
+    margin: 0 auto;
+  }
+  .tags__span {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 480px){
+    html {
+        font-size: ($root-font-size / 20px) * 100%;
+      }
+    .header{
+      &__inner{
+        overflow: hidden;
+      }
+        &__btn-open,
+        &__btn-close{
+            display: block !important;
+        }
+        &__btn-close{
+          display: block !important;
+          position: absolute;
+          right: 15px;
+          top: 15px;
+        }
+        &__nav{
+          display: none;
+          position: fixed;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background: #f7f7f7;
+          z-index: 15;
+        }
+        &__nav-list{
+          display: block !important;
+          padding-top: rem(50px) !important;
+        }
+        &__nav-list-item{
+          display: block;
+          width: min-content;
+          margin: rem(30px) auto;
+        }
+        &__nav-link{
+          font-size: rem(32px) !important;
+        }
+        &__nav--media{
+          display: block;
+        }
+        &__head{
+          font-size: rem(30px) !important;
+          line-height: rem(32px) !important;
+        }
+    }
+}

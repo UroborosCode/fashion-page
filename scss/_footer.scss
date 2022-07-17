@@ -1,0 +1,57 @@
+.footer{
+    margin-bottom: rem(40px);
+    &__box-logo{
+        margin: 0 auto;
+        display: block;
+        margin-bottom: rem(60px);
+        width: rem(162px);
+    }
+    &__nav{
+        margin-bottom: rem(29px);
+    }
+    &__nav-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: rem(30px);
+    }
+    &__nav-link{
+        @extend %serif-fw400;
+        font-size: rem(14px);
+        line-height: rem(18.55px);
+        color: rgba(23, 23, 23, 1);
+        transition: 0.7s;
+        &:hover{
+            transition: 0.7s;
+            color: #C9A96E;
+        }
+    }
+    &__social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: rem(20px);
+    }
+    &__social-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: rem(40px);
+        width: rem(40px);
+        background: #FFF;
+        border: 1px solid rgba(229, 229, 229, 1);
+        border-radius: 100%;
+        transition: 1s;
+        &:hover{
+            background: #C9A96E;
+            transition: 1s;
+            & > svg > path{
+                fill: #FFF;
+            }
+        }
+    }
+}
+.portfolio{
+    margin-top: rem(40px);
+    text-align: center;
+}
